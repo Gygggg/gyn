@@ -46,14 +46,14 @@ function task(i) {
 	
   setTimeout(function() { 
     if(first == true){
-	bot.chat("Hi Am Admin")
+	bot.chat("Привет, Я виртуальный бот ROCSIMINE ВК ГРУППА СЕРВЕРА (ПОКА НЕТУ)
 	first = false;
 	}
 	else{
 		bot.chat("")
 		first = true;
 	}
-  }, 3600000 * i); 
+  }, 30 * i); 
 } 
 
 
