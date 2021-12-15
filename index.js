@@ -6,12 +6,12 @@ let data = JSON.parse(rawdata);
 var lasttime = -1;
 var moving = 0;
 var first = false;
-var connected = 0;
+var connected = 1;
 var actions = [ 'forward', 'back', 'left', 'right']
 var lastaction;
 var pi = 3.14159;
-var moveinterval = 2; // 2 second movement interval
-var maxrandom = 5; // 0-5 seconds added to movement interval (randomly)
+var moveinterval = 5; // 2 second movement interval
+var maxrandom = 1; // 0-5 seconds added to movement interval (randomly)
 var host = data["ip"];
 var username = data["name"]
 var nightskip = data["auto-night-skip"]
@@ -46,11 +46,11 @@ function task(i) {
 	
   setTimeout(function() { 
     if(first == true){
-	bot.chat("Subscribe To Easy Gamer : https://www.youtube.com/channel/UCk575VDlrCsv1Gy2XZQ1bSA")
+	bot.chat("Hi Am Admin")
 	first = false;
 	}
 	else{
-		bot.chat("Subscribe To MannuG : https://www.youtube.com/channel/UCSZHRnBue50ImBKeR6k6eDg")
+		bot.chat("")
 		first = true;
 	}
   }, 3600000 * i); 
